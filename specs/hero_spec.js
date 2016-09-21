@@ -9,13 +9,13 @@ describe( "Hero", function() {
   var roastBeef;
 
   beforeEach(function() {
-    hero = new Hero( "He-Man", "roast beef" );
+    hero = new Hero( "Enrique", "roast beef" );
     steak = new Food( "steak", 20 );
     roastBeef = new Food( "roast beef", 16 );
   })
 
-  it("has a name", function() {
-    assert.equal( "He-Man", hero.name );
+  it("can be your hero, baby", function() {
+    assert.equal( "Enrique", hero.name );
   });
 
   it("has health", function() {
@@ -27,7 +27,7 @@ describe( "Hero", function() {
   });
 
   it("can say its name", function() {
-    assert.equal( "I am He-Man!", hero.sayName() );
+    assert.equal( "I am Enrique!", hero.sayName() );
   });
 
   it("can eat food and replenish health", function() {
